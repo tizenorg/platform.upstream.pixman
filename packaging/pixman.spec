@@ -1,16 +1,12 @@
-#sbs-git:slp/pkgs/p/pixman pixman 0.26.0 67eba3516f06fef40915917d7396b68108ee6316
-
 Name:           pixman
-Version:        0.26.0
-Release:        3
+Version:        0.27.4
+Release:        0
 License:        MIT
 Summary:        Pixel manipulation library
 Url:            http://www.x.org/
 Group:          System/Libraries
 Source:         %{name}-%{version}.tar.bz2
 BuildRequires:  pkgconfig(libpng12)
-Requires(post): /sbin/ldconfig
-Requires(postun): /sbin/ldconfig
 
 %description
 Pixel manipulation library
@@ -28,7 +24,7 @@ Pixel manipulation library
 
 %build
 
-%reconfigure --disable-arm-iwmmxt
+%configure --disable-arm-iwmmxt
 make %{?_smp_mflags}
 
 %install
