@@ -1,3 +1,6 @@
+* Mon Feb 11 2013 Anas Nashif <anas.nashif@intel.com> submit/trunk/20130211.145058@c956828
+- readd baselibs.conf
+
 * Mon Feb 11 2013 Anas Nashif <anas.nashif@intel.com> upstream/0.28.2@a3dda72
 - Update to 0.28.2
 
