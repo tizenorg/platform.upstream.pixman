@@ -1,15 +1,15 @@
 Name:           pixman
-Version:        0.27.4
+Version:        0.28.2
 Release:        0
 License:        MIT
 Summary:        Pixel manipulation library
 Url:            http://www.x.org/
 Group:          System/Libraries
-Source:         %{name}-%{version}.tar.bz2
+Source:         %{name}-%{version}.tar.gz
 BuildRequires:  pkgconfig(libpng12)
 
 %description
-Pixel manipulation library
+The pixel-manipulation library for X and cairo.
 
 %package devel
 Summary:        Development components for the pixman library
@@ -17,7 +17,9 @@ Group:          Development/Libraries
 Requires:       %{name} = %{version}
 
 %description devel
-Pixel manipulation library
+The pixel-manipulation library for X and cairo.
+
+Development components for the pixman library.
 
 %prep
 %setup -q
