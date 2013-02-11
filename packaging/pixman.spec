@@ -6,6 +6,7 @@ Summary:        Pixel manipulation library
 Url:            http://www.x.org/
 Group:          System/Libraries
 Source:         %{name}-%{version}.tar.gz
+Source1:        baselibs.conf
 BuildRequires:  pkgconfig(libpng12)
 
 %description
