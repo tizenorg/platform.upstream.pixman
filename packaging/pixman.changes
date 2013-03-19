@@ -1,3 +1,6 @@
+* Mon Mar 18 2013 Anas Nashif <anas.nashif@intel.com> submit/trunk/20130211.161533@687eb9f
+- Fixed package groups
+
 * Mon Feb 11 2013 Anas Nashif <anas.nashif@intel.com> submit/trunk/20130211.145058@c956828
 - readd baselibs.conf
 
