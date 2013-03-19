@@ -4,7 +4,7 @@ Release:        0
 License:        MIT
 Summary:        Pixel manipulation library
 Url:            http://www.x.org/
-Group:          System/Libraries
+Group:          Graphics/Libraries
 Source:         %{name}-%{version}.tar.gz
 Source1:        baselibs.conf
 BuildRequires:  pkgconfig(libpng12)
@@ -39,6 +39,7 @@ make %{?_smp_mflags}
 
 %files
 %defattr(-,root,root,-)
+%license COPYING
 %{_libdir}/libpixman-1*.so.*
 
 %files devel
