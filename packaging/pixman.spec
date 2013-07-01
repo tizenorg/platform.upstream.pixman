@@ -7,6 +7,7 @@ Url:            http://www.x.org/
 Group:          Graphics/Libraries
 Source:         %{name}-%{version}.tar.gz
 Source1:        baselibs.conf
+Source1001: 	pixman.manifest
 BuildRequires:  pkgconfig(libpng12)
 
 %description
@@ -24,6 +25,7 @@ Development components for the pixman library.
 
 %prep
 %setup -q
+cp %{SOURCE1001} .
 
 %build
 
@@ -38,11 +40,13 @@ make %{?_smp_mflags}
 %postun -p /sbin/ldconfig
 
 %files
+%manifest %{name}.manifest
 %defattr(-,root,root,-)
 %license COPYING
 %{_libdir}/libpixman-1*.so.*
 
 %files devel
+%manifest %{name}.manifest
 %defattr(-,root,root,-)
 %dir %{_includedir}/pixman-1
 %{_includedir}/pixman-1/pixman.h
