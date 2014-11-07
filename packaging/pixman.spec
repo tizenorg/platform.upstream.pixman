@@ -1,13 +1,13 @@
 Name:           pixman
-Version:        0.28.2
+Version:        0.32.6
 Release:        0
 License:        MIT
 Summary:        Pixel manipulation library
-Url:            http://www.x.org/
-Group:          Graphics/Libraries
+Url:            http://cairographics.org/releases/%{name}-%{version}.tar.gz
+Group:          System/Libraries
 Source:         %{name}-%{version}.tar.gz
 Source1:        baselibs.conf
-Source1001: 	pixman.manifest
+Source1001:     pixman.manifest
 BuildRequires:  pkgconfig(libpng12)
 
 %description
