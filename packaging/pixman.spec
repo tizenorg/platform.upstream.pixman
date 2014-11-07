@@ -8,7 +8,7 @@ Group:          System/Libraries
 Source:         %{name}-%{version}.tar.gz
 Source1:        baselibs.conf
 Source1001:     pixman.manifest
-BuildRequires:  pkgconfig(libpng12)
+BuildRequires:  pkgconfig(libpng)
 
 %description
 The pixel-manipulation library for X and cairo.
@@ -16,7 +16,7 @@ The pixel-manipulation library for X and cairo.
 %package devel
 Summary:        Development components for the pixman library
 Group:          Development/Libraries
-Requires:       %{name} = %{version}
+Requires:       %{name} = %{version}-%{release}
 
 %description devel
 The pixel-manipulation library for X and cairo.
